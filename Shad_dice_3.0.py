@@ -31,7 +31,8 @@ while True:
     total = five_count + six_count    
         #outputs glitch condition based on one as a percentage of num_dice 
     if result == 1 and total == 0 and num_dice > 1 and one_count >= num_dice // 2 + num_dice % 2:                                  
-        print('\n                                                     *** CRITICAL GLITCH ***')      
+        print('\n                                                     *** CRITICAL GLITCH ***')
+        continue
     elif result == 1 and total >= 1 and num_dice > 1 and one_count >= num_dice // 2 + num_dice % 2:                                     
         print('\n                                                             *** GLITCH ***')       
         #total count of fives
